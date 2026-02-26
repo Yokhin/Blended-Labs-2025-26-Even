@@ -74,6 +74,6 @@ This lab provided hands-on experience with AWS IAM by demonstrating how organiza
 
 ## Author
 **Name:** Yokhin Vieshveshwar M
-**Reg N:** 212223210031
+**Reg No:** 212223210031
  
 
