@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Yokhin Vieshveshwar M
+* **Register Number**: 212223210031
+* **Date of Submission**: 17.03.2026
 
 ---
 
@@ -78,35 +78,46 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+Create a 1 GiB Amazon EBS volume in the same Availability Zone as your EC2 instance and tag it My Volume.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+Attach the volume to the EC2 instance as /dev/sdf.
 
+Connect to the instance using EC2 Instance Connect.
+
+Format the volume with an ext3 file system and mount it to /mnt/data-store.
+
+Update /etc/fstab to ensure the volume mounts automatically on reboot.
+
+Create a file in the mounted volume and verify its contents.
+
+Create a snapshot (My Snapshot) of the EBS volume, then delete the file from the original volume.
+
+Restore the snapshot to a new volume, attach it (/dev/sdg), mount it, and verify the file is recovered.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
+<img width="1899" height="892" alt="Screenshot 2026-03-17 231310" src="https://github.com/user-attachments/assets/84578845-bcf1-4e29-8b69-cdc9aff17f25" />
 
----
+
+
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1865" height="857" alt="image" src="https://github.com/user-attachments/assets/f5042f89-b9a9-41f4-863a-acf919faa1d2" />
 
----
+
+<img width="1613" height="354" alt="image" src="https://github.com/user-attachments/assets/0b1820c7-a6e3-4c43-a6b7-5bfd23c727b6" />
+
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
+<img width="1255" height="557" alt="image" src="https://github.com/user-attachments/assets/80065f52-57da-4f82-8427-a735a02ff378" />
 
----
+
+
 
 ## Result / Conclusion
 
