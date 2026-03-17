@@ -1,10 +1,10 @@
-# Lab 3 – Introduction to Amazon Elastic Compute Cloud (EC2)
+<img width="1904" height="902" alt="Screenshot 2026-03-17 221655" src="https://github.com/user-attachments/assets/ff63bdb7-bf29-46fe-ab59-fd7d9a6cafb2" /># Lab 3 – Introduction to Amazon Elastic Compute Cloud (EC2)
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Yokhin Vieshveshwar M
+* **Register Number**: 212223210031
+* **Date of Submission**: 17.03.2026
 
 ---
 
@@ -110,21 +110,23 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1900" height="911" alt="Screenshot 2026-03-17 221013" src="https://github.com/user-attachments/assets/fe3c00b1-625f-443b-bd23-ae9078f741ae" />
 
----
+<img width="1904" height="902" alt="Screenshot 2026-03-17 221655" src="https://github.com/user-attachments/assets/a5472a0a-0006-45ae-9885-6538a71fa4f2" />
+
+
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1796" height="678" alt="Screenshot 2026-03-17 222959" src="https://github.com/user-attachments/assets/d2c43384-a6db-43a1-b595-1f8fe2ba7715" />
 
----
+<img width="1885" height="811" alt="Screenshot 2026-03-17 223116" src="https://github.com/user-attachments/assets/163c6e83-527b-40d3-836f-e11b77e45122" />
+
+
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
-
----
+<img width="1654" height="775" alt="image" src="https://github.com/user-attachments/assets/dca6fe79-0fa7-4f77-8bf1-8e94b485135b" />
 
 ## Result 
 
