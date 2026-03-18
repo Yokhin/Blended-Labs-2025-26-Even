@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: Yokhin Vieshveshwar M
+* **Register Number**: 212223210031
+* **Date of Submission**: 18.03.2026
 
 ---
 
@@ -82,35 +82,43 @@ Test the database server by connecting to it locally or remotely and performing 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+Go to AWS Console → VPC → Create Security Group (DB Security Group in Lab VPC).
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+Add inbound rule: MySQL (3306) → Source = Web Security Group → Create.
 
----
+Go to RDS → Subnet Groups → Create DB Subnet Group.
+
+Select Lab VPC, choose 2 AZs (us-east-1a & us-east-1b) and their subnets → Create.
+
+Go to RDS → Databases → Create database (MySQL, Dev/Test, Multi-AZ).
+
+Configure DB: name (lab-db), username (main), password, db.t3.micro, 20GB storage.
+
+Set connectivity: Lab VPC + DB Security Group, disable monitoring/backups/encryption → Create DB.
+
+Wait until DB is available → Copy the Endpoint.
+
+Open Web Server IP → go to RDS page → enter endpoint, DB name, username & password → Submit.
+
+Test the app (add/edit/delete contacts) to confirm database is working.
+
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Instance for Database Server
 
-(Insert Screenshot Here)
+<img width="1265" height="577" alt="image" src="https://github.com/user-attachments/assets/39a14cf2-bb36-4cba-ac6b-58c8610b9e4f" />
 
----
 
 ### Screenshot 2: Database Service Running
 
-(Insert Screenshot Here)
+<img width="1238" height="572" alt="image" src="https://github.com/user-attachments/assets/080af17e-1b48-462f-a5f5-19bb1fe23a24" />
 
----
 
 ### Screenshot 3: Sample Database and Table
 
-(Insert Screenshot Here)
+<img width="1255" height="430" alt="image" src="https://github.com/user-attachments/assets/f50f28ee-5c48-4b08-91a9-9bbc51a8a1f5" />
 
----
 
 ## Result
 
