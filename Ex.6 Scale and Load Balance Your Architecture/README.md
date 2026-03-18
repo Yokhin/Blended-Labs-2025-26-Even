@@ -66,16 +66,36 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 ## Workflow (To be filled by Student)
 
-Describe step-by-step how you performed this experiment in your own words.
+Go to EC2 → Instances → select Web Server 1 → create AMI (WebServerAMI).
 
----
+Go to Target Groups → create target group (LabGroup in Lab VPC).
+
+Go to Load Balancers → create Application Load Balancer (LabELB) with public subnets and Web Security Group → attach LabGroup.
+
+Go to Launch Templates → create template (LabConfig) using WebServerAMI, t2.micro, key pair, Web Security Group.
+
+Create Auto Scaling Group using template → select Lab VPC + private subnets.
+
+Attach Auto Scaling Group to LabGroup (load balancer).
+
+Set capacity: min 2, desired 2, max 6 + scaling policy (CPU ~60%).
+
+Verify: check instances and target group → ensure instances are healthy → test using Load Balancer DNS.
+
+Perform load test → monitor CloudWatch alarms → confirm new instances launch automatically.
+
+Terminate Web Server 1.
 
 ## Output Screenshots 
 
+## Load Balancer
+<img width="1898" height="867" alt="image" src="https://github.com/user-attachments/assets/3c7460e5-c977-45b6-8517-c2b2441070de" />
 
----
-
+## Auto Scaling
+<img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/cff35868-a985-4031-9984-610a6ebde5c2" />
 
 ## Result
+The lab successfully demonstrated a highly available and scalable web application using an AMI, Application Load Balancer, and Auto Scaling Group that automatically adjusts instances based on demand.
+
 
 This experiment demonstrated how to build a scalable and fault-tolerant cloud architecture using Auto Scaling Groups and Elastic Load Balancing. The system automatically adjusted resources based on workload and ensured continuous service availability by distributing traffic across multiple instances.
